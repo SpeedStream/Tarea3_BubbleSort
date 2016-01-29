@@ -21,18 +21,13 @@ void bubbleSort(int *arr, int size) {
    while(cambio){
       cambio = false;
       for (int i = 0; i < size; ++i){
-         //printf("i: %i\n", i);
-         //printf("size: %i\n", size);
          if(arr[i] > arr[i+1]){
-            //printf("swap!\n");
             tmp = arr[i];
             arr[i] = arr[i+1];
             arr[i+1] = tmp;
             cambio = true;
          }
-         //printf("\n");
       }
-      //printf("END\n");
    }
 }
 
